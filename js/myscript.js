@@ -20,6 +20,7 @@ if (passengerAge < 18) {
 }
 
 /* Output Values Transformation */
+    ticketPrice = ticketPrice.toFixed(2);
     ticketDiscount = ticketDiscount.toFixed(2);
     ticketFinalPrice = ticketFinalPrice.toFixed(2);
 
