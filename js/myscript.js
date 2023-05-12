@@ -25,7 +25,7 @@ if (passengerAge < 18) {
     ticketFinalPrice = ticketFinalPrice.toFixed(2);
 
 /* Output - Only if the inserted infos are valid */
-if (!(isNaN(kilometersNumber)) || (!isNaN(passengerAge))) {
+if (!isNaN(kilometersNumber) && !isNaN(passengerAge)) {
     document.getElementById("kilometersOutput").innerHTML = " " + kilometersNumber + ".";
     document.getElementById("passengerAgeOutput").innerHTML = " " + passengerAge + ".";
     document.getElementById("priceOutput").innerHTML = " " + ticketPrice + " €.";
