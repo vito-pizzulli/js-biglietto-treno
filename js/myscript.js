@@ -1,6 +1,6 @@
 /* Variables Declaring & Initializing */
-const kilometersNumber = parseInt(prompt("Inserisci il numero di km da percorrere"));
-const passengerAge = parseInt(prompt("Inserisci l'età del passeggero"));
+const kilometersNumber = parseInt(prompt("Inserisci il numero di km da percorrere:"));
+const passengerAge = parseInt(prompt("Inserisci l'età del passeggero:"));
 let ticketDiscount = 0;
 let ticketFinalPrice;
 let discountPercent = "0%";
