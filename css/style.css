@@ -7,19 +7,67 @@
 main {
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
-
+    background-image: url(..//img/night-train.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: auto;
 }
 
 span {
-    color: red;
+    color: #517ae2;
     font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h1,
 h2 {
     margin-bottom: .5rem;
+    color: #d2546b;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 p {
     margin-bottom: 2rem;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+div.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+
+/* Responsive Layouts */
+
+/* XS Layout (from 0px to 576px */
+@media screen and (max-width: 576px) {
+    main {
+        background-position: left;
+    }
+
+    div.container {
+        width: 100%;
+    }
+}
+
+/* 2K Layout (from 2560px to 3840px */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    html {
+        font-size: 40px;
+    }
 }
