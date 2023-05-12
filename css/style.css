@@ -6,7 +6,6 @@
 
 main {
     font-family: 'Montserrat', sans-serif;
-    padding: 1rem;
     background-image: url(..//img/night-train.gif);
     background-size: cover;
     background-position: center;
@@ -15,6 +14,7 @@ main {
     justify-content: flex-end;
     align-items: center;
     overflow: auto;
+    padding: 1rem;
 }
 
 span {
@@ -24,24 +24,31 @@ span {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-h1,
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 4rem;
+    color: #e87177;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: 1rem;
+}
+
 h2 {
-    margin-bottom: .5rem;
     color: #d2546b;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: .5rem;
 }
 
 p {
-    margin-bottom: 2rem;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: 2rem;
 }
 
 div.container {
     background-color: rgba(0, 0, 0, 0.4);
     width: 50%;
-    padding: 1rem;
     border-radius: 20px;
+    padding: 1rem;
 }
 
 
