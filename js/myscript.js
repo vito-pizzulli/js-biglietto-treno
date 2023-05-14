@@ -26,12 +26,12 @@ if (passengerAge < 18) {
 
 /* Output - Only if the inserted infos are valid */
 if (!isNaN(kilometersNumber) && !isNaN(passengerAge)) {
-    document.getElementById("kilometersOutput").innerHTML = " " + kilometersNumber + ".";
-    document.getElementById("passengerAgeOutput").innerHTML = " " + passengerAge + ".";
-    document.getElementById("priceOutput").innerHTML = " " + ticketPrice + " €.";
+    document.getElementById("kilometersOutput").innerHTML = " " + kilometersNumber;
+    document.getElementById("passengerAgeOutput").innerHTML = " " + passengerAge;
+    document.getElementById("priceOutput").innerHTML = " " + ticketPrice + " €";
     document.getElementById("discountPercentOutput").innerHTML = " " + discountPercent;
-    document.getElementById("discountPriceOutput").innerHTML = " " + ticketDiscount + " €.";
-    document.getElementById("finalPriceOutput").innerHTML = " " + ticketFinalPrice + " €.";
+    document.getElementById("discountPriceOutput").innerHTML = " " + ticketDiscount + " €";
+    document.getElementById("finalPriceOutput").innerHTML = " " + ticketFinalPrice + " €";
 } else {
     document.getElementById("kilometersOutput").innerHTML = " "+ "Valori inseriti non validi!"
     document.getElementById("passengerAgeOutput").innerHTML = " " + "Valori inseriti non validi!"
