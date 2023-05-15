@@ -24,19 +24,19 @@ if (passengerAge < 18) {
     ticketDiscount = ticketDiscount.toFixed(2);
     ticketFinalPrice = ticketFinalPrice.toFixed(2);
 
-/* Output - Only if the inserted infos are valid */
-if (!isNaN(kilometersNumber) && !isNaN(passengerAge)) {
-    document.getElementById("kilometersOutput").innerHTML = " " + kilometersNumber;
-    document.getElementById("passengerAgeOutput").innerHTML = " " + passengerAge;
-    document.getElementById("priceOutput").innerHTML = " " + ticketPrice + " €";
-    document.getElementById("discountPercentOutput").innerHTML = " " + discountPercent;
-    document.getElementById("discountPriceOutput").innerHTML = " " + ticketDiscount + " €";
-    document.getElementById("finalPriceOutput").innerHTML = " " + ticketFinalPrice + " €";
-} else {
+/* Output - Only if the inserted infos are not NaN or 0 */
+if ((kilometersNumber == 0) || (passengerAge == 0) || isNaN(kilometersNumber) || isNaN(passengerAge)) {
     document.getElementById("kilometersOutput").innerHTML = " "+ "Valori inseriti non validi!"
     document.getElementById("passengerAgeOutput").innerHTML = " " + "Valori inseriti non validi!"
     document.getElementById("priceOutput").innerHTML = " " + "Valori inseriti non validi!"
     document.getElementById("discountPercentOutput").innerHTML = " " + "Valori inseriti non validi!"
     document.getElementById("discountPriceOutput").innerHTML = " " + "Valori inseriti non validi!"
     document.getElementById("finalPriceOutput").innerHTML = " " + "Valori inseriti non validi!"
+} else {
+    document.getElementById("kilometersOutput").innerHTML = " " + kilometersNumber;
+    document.getElementById("passengerAgeOutput").innerHTML = " " + passengerAge;
+    document.getElementById("priceOutput").innerHTML = " " + ticketPrice + " €";
+    document.getElementById("discountPercentOutput").innerHTML = " " + discountPercent;
+    document.getElementById("discountPriceOutput").innerHTML = " " + ticketDiscount + " €";
+    document.getElementById("finalPriceOutput").innerHTML = " " + ticketFinalPrice + " €";
 }
